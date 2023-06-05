@@ -49,12 +49,12 @@ public class MainActivity extends AppCompatActivity {
             positions[tappedImage] = player;
 
 
-            Log.d("player1",String.valueOf(player));
+           // Log.d("player1",String.valueOf(player));
             if(player == 0)
             {
                 imageView.setImageResource(R.drawable.x);
                 player++;
-                Log.d("player2", String.valueOf(player));
+              //  Log.d("player2", String.valueOf(player));
             }
             else
             {
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(cnt == 9 && flag == false){
             Toast.makeText(this, "Draw", Toast.LENGTH_SHORT).show();
-            
+
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
